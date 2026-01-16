@@ -1,0 +1,48 @@
+### Build & Maven (Compilação) ###
+target/
+*.class
+*.log
+*.jar
+*.war
+*.ear
+# Mantém o wrapper do Maven (importante para CI/CD)
+!.mvn/wrapper/maven-wrapper.jar
+
+### Segurança & Credenciais (NOVO - Muito Importante) ###
+# Ignora arquivos de variáveis de ambiente
+.env
+.env.local
+# Ignora o arquivo de dados sensíveis que criamos no teste de Login
+login-data.json
+credentials.json
+# Ignora logs gerados na raiz
+karate.log
+
+### IntelliJ IDEA (JetBrains) ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### VS Code ###
+.vscode/
+
+### Eclipse & NetBeans (Opcional - Mantido para limpeza) ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+/nbproject/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### Mac OS / Windows ###
+.DS_Store
+Thumbs.db
